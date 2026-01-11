@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janhvi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00adb5;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        #home {
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+        }
+
+        #home p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #00adb5;
+        }
+
+        .project-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 250px;
+        }
+
+        .project-card p {
+            margin-top: 8px;
+            color: #555;
+        }
+
+        form {
+            max-width: 400px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background: #00adb5;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background: #007f86;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            #home h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <h1>Janhvi.dev</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="home">
+        <h2>Hi, I'm Janhvi 👋</h2>
+        <p>
+            A curious learner who enjoys building things with code  
+            and turning ideas into simple, useful websites.
+        </p>
+    </section>
+
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m an aspiring developer with a strong interest in web development 
+            and problem-solving. I enjoy learning new technologies, experimenting 
+            with projects, and improving my skills one step at a time.
+        </p>
+    </section>
+
+   
+    <section id="projects">
+        <h2>Things I’ve Built</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive website to showcase my skills, projects, 
+                    and learning journey.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Student Management System</h3>
+                <p>
+                    A basic system to manage student records using programming concepts.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Data Visualization Dashboard</h3>
+                <p>
+                    Visualized data using charts to make insights easier to understand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <h2>Let’s Connect</h2>
+        <p style="margin-bottom: 15px;">
+            Have a question, opportunity, or just want to say hi?  
+            I’d love to hear from you.
+        </p>
+        <form>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea rows="4" placeholder="Your message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>© 2026 Janhvi Kadhao · Built with ❤️ and curiosity</p>
+    </footer>
+
+</body>
+</html>
